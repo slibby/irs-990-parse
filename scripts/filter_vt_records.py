@@ -13,4 +13,3 @@ with open(r"c:\temp\irs990\output.csv", "w", newline = '') as o:
                     obj['name'] = value
                     #print(obj)
                     dataWriter.writerow([obj['name'].strip(),obj['url'].replace("\\n","")])
-
