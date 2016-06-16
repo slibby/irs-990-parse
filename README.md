@@ -1,8 +1,9 @@
 # irs-990-parse: finding value in 3.5M Non-profit tax returns
-This repository contains guidance and Python scripts for parsing IRS 990 releases in Amazon S3
+This repository contains guidance and Python scripts for parsing [IRS 990 releases in Amazon S3](https://aws.amazon.com/public-data-sets/irs-990)
 
-to begin, you'll need the `index.json` file from the S3 bucket, it's 1GB so don't try it on a mobile tether :thumbsdown:
-Install the AWS CLI and run the following command from your desired destination folder:
+To begin, you'll need to download the `index.json` file from the S3 bucket, it's 1Gb so don't try it on a mobile tether :thumbsdown:
+
+The easiest method is to install the [AWS CLI](https://aws.amazon.com/cli/) and run the following command from your desired destination folder:
 `aws s3 cp s3://irs-form-990/index.json index.json`
 
 the CLI should download the file in parts for you, and you'll end up with a big, big JSON file.
