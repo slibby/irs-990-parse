@@ -27,4 +27,5 @@ Not all attributes are available in all objects, for example if `IsAvailable` is
 
 Parsing through the file in-memory is generally not possible, so a streaming approach can be used through the module **ijson**. To acquire **ijson**, run `pip install ijson` from your Python environment.
 
-Some useful filtering options available for this large file are to search by `OrganizationName` and by `IsAvailable`. An example is provided in [filter_vt_records.py](scripts/filter-vt-records.py)
+Some useful filtering options available for this large file are to search by `OrganizationName` and by `IsAvailable`. An example is provided in [filter_vt_records.py](scripts/filter-vt-records.py). This will parse the entire file and pull out any record containing the word "VERMONT", exporting it to a more manageable CSV:
+[Sample Image](http://i.imgur.com/pBU8Jyc.png)
